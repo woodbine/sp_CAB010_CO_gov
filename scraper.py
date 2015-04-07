@@ -44,6 +44,6 @@ for block in blocks:
 	
 	todays_date = str(datetime.now())
 	
-	scraperwiki.sqlite.save(unique_keys=['l'], data={"l": link, "f": filename, "d": todays_date })
+	scraperwiki.sqlite.save(unique_keys=['l'], data={"l": csvUrl, "f": filename, "d": todays_date })
 	
 	print filename
